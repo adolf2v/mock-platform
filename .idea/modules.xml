@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/PycharmProjects/mock-platfrom/.idea/mock-platfrom.iml" filepath="$USER_HOME$/PycharmProjects/mock-platfrom/.idea/mock-platfrom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mock-platform.iml" filepath="$PROJECT_DIR$/.idea/mock-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mock-platfrom/.idea/mock-platfrom.iml" filepath="$PROJECT_DIR$/../mock-platfrom/.idea/mock-platfrom.iml" />
     </modules>
   </component>
 </project>

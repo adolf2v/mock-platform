@@ -6,7 +6,7 @@ from tornado.log import app_log
 import simplejson as json
 import redis
 
-
+# 用来设置mock请求的配置，包括域名，接口，标识符，请求参数，响应内容
 class MockHandler(tornado.web.RequestHandler):
     # 在redis中设置需要mock请求的response
     def post(self):
@@ -48,7 +48,8 @@ class MockHandler(tornado.web.RequestHandler):
         except redis.ConnectionError as e:
             app_log.error('%s', str(e))
 
-
+# 用来处理mock的第三方请求，需要根据自己的实际情况进行改动
+# 对于支付的需求，有可能需要模拟支付的回调
 class Mock(tornado.web.RequestHandler):
     # 用来mock get请求，get请求过会走这里
     def get(self):
