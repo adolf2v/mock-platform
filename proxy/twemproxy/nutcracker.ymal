@@ -1,0 +1,12 @@
+alpha:
+  listen: 127.0.0.1:6380
+  hash: fnv1a_64
+  distribution: ketama
+  auto_eject_hosts: true
+  redis: true
+  server_retry_timeout: 30000
+  server_failure_limit: 3
+  servers:
+   - 172.16.1.21:6379:1
+   - 172.16.1.10:6379:1
+   - 172.16.1.172:6379:1
